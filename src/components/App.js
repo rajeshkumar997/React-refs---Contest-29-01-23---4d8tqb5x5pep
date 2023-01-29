@@ -5,14 +5,15 @@ const App = () => {
 //code here 
   const emailVal = useRef("")
   const passValue = useRef("")
-  
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
-  
-  useEffect(() => {
-    emailVal.current = email;
-    passValue.current = pass;
-  })
+
+const [email, setEmail] = useState("");
+const [pass, setPass] = useState("");
+
+useEffect(()=>{
+  emailVal.current = email;
+  passValue.current = pass;
+})
+
 
   return (
     <div id="main">
